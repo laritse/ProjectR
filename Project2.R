@@ -108,6 +108,9 @@ install.packages('tidyverse')
     geom_point() + 
     geom_smooth(method = lm) +
     labs(title="Relationship Between Total Minutes Asleep And Total Time in Bed")
+
+<p align = "center">
+<img src="https://github.com/laritse/Capstone_Project/blob/main/Report Visualizations/Customer_ride_distribution.png" width="450" height="300" />
   
   intensities2 <- intensities %>%
     group_by(time) %>%
