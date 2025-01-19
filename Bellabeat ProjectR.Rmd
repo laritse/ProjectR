@@ -5,7 +5,7 @@ date: "2025-01-19"
 output: html_document
 ---
 
-#Installing required packages for cleaning and visualizations
+Installing required packages for cleaning and visualizations
 
 ```{r}
 install.packages('tidyverse')
@@ -17,7 +17,7 @@ loading tidyverse
 library(tidyverse)
 ```
 
- # loading data files into R 
+loading data files into R 
  
 ```{r}
 activity <- read.csv("dailyActivity_merged.csv")
