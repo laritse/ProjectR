@@ -1,5 +1,6 @@
 #Installing required packages for cleaning and visualizations
 install.packages('tidyverse')
+#loading tidyverse
   library(tidyverse)
   # loading data files into R 
   activity <- read.csv("dailyActivity_merged.csv")
@@ -107,9 +108,6 @@ install.packages('tidyverse')
     geom_point() + 
     geom_smooth(method = lm) +
     labs(title="Relationship Between Total Minutes Asleep And Total Time in Bed")
-
-<p align = "center">
-<img src="https://github.com/laritse/Capstone_Project/blob/main/Report Visualizations/Customer_ride_distribution.png" width="450" height="300" />
   
   intensities2 <- intensities %>%
     group_by(time) %>%
@@ -148,10 +146,9 @@ install.packages('tidyverse')
   # ...based on the above insights to improve bellabeat app
   # 1. introduction of daily goals will encourage app engagement.
   # 2. App notifications and reminders will inform users of their health and also introduce healthy habits.
-<<<<<<< HEAD
   # 3. Also, an easy app interface will lead to userfriendliness and increase customer retention.
-=======
-  # 3. Also, an easy app interface will lead to userfriendliness and increase customer retention.
+
+
+
   
-  
->>>>>>> e28b6650eacfac2386690841a0ac178266e0d125
+^
