@@ -1,6 +1,5 @@
 #Installing required packages for cleaning and visualizations
 install.packages('tidyverse')
-#loading packages
   library(tidyverse)
   # loading data files into R 
   activity <- read.csv("dailyActivity_merged.csv")
@@ -147,5 +146,3 @@ install.packages('tidyverse')
   # 1. introduction of daily goals will encourage app engagement.
   # 2. App notifications and reminders will inform users of their health and also introduce healthy habits.
   # 3. Also, an easy app interface will lead to userfriendliness and increase customer retention.
-  
-  

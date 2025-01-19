@@ -1,0 +1,42 @@
+---
+title: "Bellabeat Project R"
+author: "Ola Beji"
+date: "2025-01-19"
+output: html_document
+---
+
+#Installing required packages for cleaning and visualizations
+
+```{r}
+install.packages('tidyverse')
+```
+
+loading tidyverse
+
+```{r}
+library(tidyverse)
+```
+
+ # loading data files into R 
+ 
+```{r}
+activity <- read.csv("dailyActivity_merged.csv")
+calories <- read.csv("hourlyCalories_merged.csv")
+intensities <- read.csv("hourlyIntensities_merged.csv")
+sleep <- read.csv("sleepDay_merged.csv")
+weight <- read.csv("weightLogInfo_merged.csv")
+```
+ 
+ 
+ ```{r}
+activity <- read.csv("dailyActivity_merged.csv")
+calories <- read.csv("hourlyCalories_merged.csv")
+intensities <- read.csv("hourlyIntensities_merged.csv")
+sleep <- read.csv("sleepDay_merged.csv")
+weight <- read.csv("weightLogInfo_merged.csv")
+
+```
+ 
+
+
+
