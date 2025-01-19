@@ -2,8 +2,11 @@
 title: "Untitled"
 author: "Ola Beji"
 date: "2025-01-19"
-output: markdown_github
+output: github_document
 ---
+```{r}
+
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -28,3 +31,5 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+

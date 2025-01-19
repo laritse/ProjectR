@@ -2,7 +2,7 @@
 title: "Bellabeat Project R"
 author: "Ola Beji"
 date: "2025-01-19"
-output: html_document
+output: github_document
 ---
 
 ## Installing required packages for cleaning and visualizations
