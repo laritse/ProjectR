@@ -1,7 +1,7 @@
 Bellabeat Project
 ================
 
-loading packages for cleaning and visualizations
+Loading packages for cleaning and visualizations
 
 ``` r
 library(tidyverse)
@@ -22,7 +22,7 @@ library(tidyverse)
 library(readr)
 ```
 
-loading data files into R
+Loading data files into R
 
 ``` r
 activity <- read_csv("dailyActivity_merged.csv")
@@ -111,7 +111,7 @@ head(activity)
     ## #   VeryActiveMinutes <dbl>, FairlyActiveMinutes <dbl>,
     ## #   LightlyActiveMinutes <dbl>, SedentaryMinutes <dbl>, Calories <dbl>
 
-viewing the sleep_day data.
+Viewing the sleep_day data.
 
 ``` r
 head(sleep)
@@ -178,7 +178,7 @@ head(weight)
     ## 5 2873212765 5/12/2016…     57.3         126.    NA  21.7 TRUE           1.46e12
     ## 6 4319703577 4/17/2016…     72.4         160.    25  27.5 TRUE           1.46e12
 
-checking data structure
+Checking data structure
 
 ``` r
 str(activity)
@@ -332,7 +332,7 @@ nrow(intensities[duplicated(intensities),])
 
     ## [1] 0
 
-removing 3 duplicate rows found in the sleep dataset
+Removing duplicate rows found in the sleep dataset
 
 ``` r
 sleep <- unique(sleep)
@@ -373,7 +373,7 @@ n_distinct(weight$Id)
 
     ## [1] 8
 
-checking the number of observations available in each dataframe
+Checking the number of observations available in each dataframe
 
 ``` r
 nrow(activity)
@@ -579,7 +579,7 @@ ggplot(data=sleep, aes(x=TotalMinutesAsleep, y=TotalTimeInBed)) +
 
     ## `geom_smooth()` using formula = 'y ~ x'
 
-![](Untitled_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+![](Bellabeat-Project_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
 
 ``` r
 intensities2 <- intensities %>%
@@ -599,7 +599,7 @@ ggplot(data=intensities2, aes(x=time, y=total_int_mean)) + geom_histogram(stat =
     ## Warning in geom_histogram(stat = "identity", fill = "black"): Ignoring unknown
     ## parameters: `binwidth`, `bins`, and `pad`
 
-![](Untitled_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
+![](Bellabeat-Project_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
 
 The above bar plot shows that the hours of 5pm to 7pm is when the most
 activity occurs. This may suggest that earlier times of less activity
@@ -614,7 +614,7 @@ ggplot(data=activity_sleep, aes(x=SedentaryMinutes, y=Calories)) +
   labs(title="Relationship Between Sedentary Minutes And Calories")
 ```
 
-![](Untitled_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![](Bellabeat-Project_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
 
 There appears to be no relationship between both variables as the data
 points have no pattern. This can be a space Bellabeat can leverage on by
@@ -634,7 +634,7 @@ ggplot(data=activity_sleep, aes(x=TotalSteps, y=Calories)) +
 
     ## `geom_smooth()` using formula = 'y ~ x'
 
-![](Untitled_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
+![](Bellabeat-Project_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
 
 There appers to be a positive corroletion. Data points have an upward
 trend which confirms positive relationship between Total steps and
@@ -642,9 +642,7 @@ calories. This suggest that the more steps participants make, the more
 calories they burn. This can be used to inform users of their health
 achievements thereby increasing device engagement.
 
-### RECOMENDATIONS
-
-…based on the above insights to improve bellabeat app
+###### RECOMENDATIONS based on the above insights to improve bellabeat app
 
 1.  Introduction of daily goals will encourage app engagement.
 
