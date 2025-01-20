@@ -592,7 +592,7 @@ day
 
 ``` r
 ggplot(data=intensities2, aes(x=time, y=total_int_mean)) + geom_histogram(stat = "identity", fill='black') +
-  theme(axis.text.x = element_text(angle = 0)) +
+  theme(axis.text.x = element_text(angle = 45)) +
   labs(title="Average Total Intensity Through Hours Of The Day")
 ```
 
