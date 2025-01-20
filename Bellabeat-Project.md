@@ -600,6 +600,10 @@ head(activity_sleep)
 
 ### ANALYSIS
 
+A visual representation of the data will provide better insights to participants habits
+for better analysis. I will start by identifying the relationship between the total minutes 
+asleep and the total time in bed.
+
 ``` r
 ggplot(data=sleep, aes(x=TotalMinutesAsleep, y=TotalTimeInBed)) + 
   geom_point() + 
