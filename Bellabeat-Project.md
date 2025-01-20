@@ -1,5 +1,9 @@
 Bellabeat Project
 ================
+### INTRODUCTION
+### CLEANING
+
+
 
 Loading packages for cleaning and visualizations
 
@@ -524,14 +528,15 @@ mostly hours of inactivity were recorded compared to others. We can see
 that the recording of lightly active minutes on average (mean) amounts
 to 3hrs, and sedentary minutes amount to 16hrs, this a very long period
 of inactivity. Investigating habits through the day will reveal why this
-so. On the other hand, for sleep summary, on average a participant slept
-for 7hrs once
+is so. On the other hand, for sleep summary, on average a participant slept
+for 7hrs at one time. This is not healthy as this falls short of what is required
+per night.
 
 Merging data for analysis and visualization
 
 ``` r
 activity_sleep <- merge(sleep, activity, by=c('Id', 'date'))
-head(activity_sleep)
+head(activity_sleep) 
 ```
 
     ##           Id     date   SleepDay TotalSleepRecords TotalMinutesAsleep
@@ -569,6 +574,8 @@ head(activity_sleep)
     ## 4                  10                  221              773     1863
     ## 5                  20                  164              539     1728
     ## 6                  31                  264              775     2035
+
+### ANALYSIS
 
 ``` r
 ggplot(data=sleep, aes(x=TotalMinutesAsleep, y=TotalTimeInBed)) + 
@@ -620,8 +627,8 @@ There appears to be no relationship between both variables as the data
 points have no pattern. This can be a space Bellabeat can leverage on by
 suggesting/introducing healthy lifestyles to users.Bellabeat can
 leverage on this by having user devices record long sedentary habits and
-encourage users to be active as inacvtivity for long periods could lead
-to serious health problems.
+encourage users to be active as long sedentary periods could lead
+to health problems.
 
 Relationship between total steps and calories
 
@@ -642,7 +649,13 @@ calories. This suggest that the more steps participants make, the more
 calories they burn. This can be used to inform users of their health
 achievements thereby increasing device engagement.
 
-###### RECOMENDATIONS based on the above insights to improve bellabeat app
+### STATISTICAL ANALYSIS
+
+### SUMMARY
+
+### RECOMMENDATIONS
+
+###### Recommendations based on the above insights to improve bellabeat app
 
 1.  Introduction of daily goals will encourage app engagement.
 
