@@ -1,5 +1,11 @@
 Bellabeat Project
 ================
+### TABLE OF CONTENTS
+- [Introduction](#introduction)
+- [Cleaning](#cleaning)
+- [Analysis](#analysis)
+- [Summary](#summary)
+- [Recommendations](#recommendations)
 ### INTRODUCTION
 ### CLEANING
 
