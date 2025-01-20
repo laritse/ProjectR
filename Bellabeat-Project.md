@@ -7,8 +7,33 @@ Bellabeat Project
 - [Summary](#summary)
 - [Recommendations](#recommendations)
 ### INTRODUCTION
+
+As a junior data analyst working on the marketing analyst team at Bellabeat, a high-tech manufacturer of health-focused products for women. Bellabeat is a successful small company, but they have the potential to become a larger player in the global smart device market. Urška Sršen, cofounder and Chief Creative Officer of Bellabeat, believes that analyzing smart device fitness data could help unlock new growth opportunities for the company. I have been asked to focus on one of Bellabeat’s products and analyze smart device data to gain insight into how consumers are using their smart devices. The insights I discover will then help guide marketing strategy for the company. These analysis will be presented to the Bellabeat executive team along with high-level recommendations for Bellabeat’s marketing strategy.
+
+Products
+
+- Bellabeat app: The Bellabeat app provides users with health data related to their activity, sleep, stress,
+menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and
+make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
+
+- Leaf: Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects
+to the Bellabeat app to track activity, sleep, and stress.
+
+- Time: This wellness watch combines the timeless look of a classic timepiece with smart technology to track user
+activity, sleep, and stress. The Time watch connects to the Bellabeat app to provide you with insights into your
+daily wellness.
+
+- Spring: This is a water bottle that tracks daily water intake using smart technology to ensure that you are
+appropriately hydrated throughout the day. The Spring bottle connects to the Bellabeat app to track your
+hydration levels.
+○ Bellabeat membership: Bellabeat also offers a subscription-based membership program for users.
+Membership gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and
+beauty, and mindfulness based on their lifestyle and goals.
+
 ### CLEANING
 
+The first step to take is to process the data from dirty to clean before analysis.
+This was done using RStudio with the following steps below.
 
 
 Loading packages for cleaning and visualizations
@@ -529,14 +554,6 @@ weight %>%
     ##  3rd Qu.: 85.05   3rd Qu.:187.5   3rd Qu.:25.56  
     ##  Max.   :133.50   Max.   :294.3   Max.   :47.54
 
-This summary informs me that on avergae, participants are less active as
-mostly hours of inactivity were recorded compared to others. We can see
-that the recording of lightly active minutes on average (mean) amounts
-to 3hrs, and sedentary minutes amount to 16hrs, this a very long period
-of inactivity. Investigating habits through the day will reveal why this
-is so. On the other hand, for sleep summary, on average a participant slept
-for 7hrs at one time. This is not healthy as this falls short of what is required
-per night.
 
 Merging data for analysis and visualization
 
@@ -593,6 +610,11 @@ ggplot(data=sleep, aes(x=TotalMinutesAsleep, y=TotalTimeInBed)) +
     ## `geom_smooth()` using formula = 'y ~ x'
 
 ![](Bellabeat-Project_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+
+The scatterplot above shows a strong linear relationship between total minutes asleep
+and total time in bed. Most data points are on the line, with a few outliers outside
+the trend line. The upward trend pattern implies that the longer the sleep, the more 
+time in bed.
 
 ``` r
 intensities2 <- intensities %>%
@@ -655,13 +677,21 @@ calories. This suggest that the more steps participants make, the more
 calories they burn. This can be used to inform users of their health
 achievements thereby increasing device engagement.
 
-### STATISTICAL ANALYSIS
 
 ### SUMMARY
 
+From the above statiscal summary, the data informs me that on avergae, 
+participants are less active as the most hours of inactivity were recorded 
+compared to others. We can see that the recording of lightly active minutes 
+on average (mean) amountsto 3hrs, and sedentary minutes amount to 16hrs, 
+this a very long period of inactivity. Investigating intensity habits through 
+the day revealed why this is so. On the other hand, for sleep summary, on average 
+a participant slept for 7hrs at one time. This is not healthy as this falls short 
+of what is required every night.
+
 ### RECOMMENDATIONS
 
-###### Recommendations based on the above insights to improve bellabeat app
+###### Recommendations based on the above insights to improve bellabeat app 
 
 1.  Introduction of daily goals will encourage app engagement.
 
