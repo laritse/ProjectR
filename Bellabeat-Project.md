@@ -702,5 +702,5 @@ of what is required every night.
 2.  App notifications and reminders will inform users of their health
     and also introduce healthy habits.
 
-3.  Also, an easy app interface will lead to userfriendliness and
+3.  Also, an easy app interface will result in userfriendliness and
     increase customer retention.
