@@ -687,7 +687,7 @@ achievements thereby increasing device engagement.
 From the above statiscal summary, the data informs me that on avergae, 
 participants are less active as the most hours of inactivity were recorded 
 compared to others. We can see that the recording of lightly active minutes 
-on average (mean) amountsto 3hrs, and sedentary minutes amount to 16hrs, 
+on average (mean) amounts to 3hrs, and sedentary minutes amount to 16hrs, 
 this a very long period of inactivity. Investigating intensity habits through 
 the day revealed why this is so. On the other hand, for sleep summary, on average 
 a participant slept for 7hrs at one time. This is not healthy as this falls short 
