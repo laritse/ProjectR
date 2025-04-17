@@ -685,7 +685,7 @@ achievements thereby increasing device engagement.
 ### SUMMARY
 
 From the above statiscal summary, the data informs me that on avergae, 
-participants are less active, as the most hours of inactivity were recorded. 
+participants are less active as the most hours of inactivity were recorded. 
 We can see that the recording of lightly active minutes 
 on average (mean) amounts to 3hrs, and sedentary minutes amounts to 16hrs, 
 this is a very long period of inactivity. Investigating intensity habits through 
